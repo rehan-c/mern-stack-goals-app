@@ -6,7 +6,7 @@ const {errorHandler} = require('./middleware/errorMiddleware')
 const connectDB = require('./config/db')
 const port = process.env.PORT || 5000
 
-connectDB()
+//connectDB()
 
 const app = express()
 
@@ -22,4 +22,6 @@ app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'build', 'index.
 
 app.use(errorHandler)
 
-app.listen(port, () => console.log(`Server started on port ${port}`))
+connectDB().then(() => {
+    app.listen(port, () => console.log(`Server started on port ${port}`))
+})
