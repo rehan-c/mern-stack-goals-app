@@ -5,7 +5,7 @@ https://calm-cyan-jaguar-boot.cyclic.app/
 This is a goal tracking application created using MongoDB, Express.js, React.js with Redux & Node.js.<br />
 There is a REST API with full CRUD functionality for creating, updating and deleting goals.<br />
 Users can create an account, sign in and create goals, view them and delete them.<br />
-Authentication is handled using JSON Web Tokens (jwt) & bcryptjs<br />
+Authentication is handled using JSON Web Tokens (jwt) & bcrypt.<br />
 
 # Install instructions
 Fork or download this repository locally.<br />
